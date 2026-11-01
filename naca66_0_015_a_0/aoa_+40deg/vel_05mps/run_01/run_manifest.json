@@ -1,0 +1,19 @@
+{
+  "case_id": "run_01",
+  "study_id": "vel_05mps",
+  "output_coverage_score": 50.0,
+  "paper_quality_score": 500.0,
+  "paper_quality_percentage": 100.0,
+  "publication_ready": true,
+  "critical_failures": [],
+  "metadata": {
+    "case_idx": 111,
+    "case_id": "case_111_aoa+40_u05",
+    "velocity_m_s": 5.0,
+    "incidence_deg": 40.0,
+    "Cl": 0.924828,
+    "Cd": 1.07388,
+    "runtime_s": 88.88760352134705,
+    "status": "CONVERGED"
+  }
+}
