@@ -1,0 +1,5 @@
+blade,diffusion_factor_D,de_haller_ratio
+Blade 0 (Bottom),2.500000e-01,1.012616e+00
+Blade 1 (Center),1.555240e-01,1.028948e+00
+Blade 2 (Top),2.500000e-01,1.020782e+00
+Cascade (Mean),1.131438e-03,1.020782e+00
