@@ -1,0 +1,64 @@
+# Jastricks Native Solver Configuration (Reproducible Engineering Case)
+geometry:
+  designation: 'NACA 66(0)-015'
+  meanline_a: 0.2
+  chord: 0.1
+domain:
+  type: 'cascade'
+  pitch: 0.05
+  blade_count: 3
+  stagger_deg: 10.0
+  inlet_type: 'semicircle'
+physics:
+  fluid: 'air'
+  flow_model: 'compressible'
+  rho: 1.225
+  nu: 1.5e-05
+  Cp: 1005.0
+  Pr: 0.71
+  Pr_t: 0.85
+  T_inlet: 293.15
+  T_wall: 293.15
+  thermal: true
+  U_inlet: 10.0
+  V_inlet: 0.0
+  turbulence_model: 'k-omega-sst'
+  wall_treatment: 'wall_resolved'
+  target_yplus: 1.0
+solver:
+  algorithm: 'DensityBased'
+  flow_model: 'compressible'
+  convection_scheme: 'second_order_deferred'
+  convection_blending: 0.8
+  alphaU: 0.7
+  alphaP: 0.3
+  alphaNuT: 0.8
+  maxIters: 600
+  tolerance_U: 1e-5
+  tolerance_P: 1e-5
+  tolerance_continuity: 1e-6
+  tolerance_mass_imbalance: 1e-4
+reference:
+  p_ref: 0.0
+  q_inf: 61.25000000000001
+  ref_area: 0.30000000000000004
+  ref_area_convention: 'blade_count * chord * span for cascade; one chord * span for single'
+
+# Direct solver parameters (C++ line parser compatible)
+U_inlet: 10.0
+V_inlet: 0.0
+nu: 1.5e-05
+rho: 1.225
+Cp: 1005.0
+Pr: 0.71
+Pr_t: 0.85
+T_inlet: 293.15
+T_wall: 293.15
+solveThermal: true
+convectionBlending: 0.8
+alphaU: 0.7
+alphaP: 0.3
+chord: 0.1
+blade_count: 3
+stagger_deg: 10.0
+maxIters: 600
