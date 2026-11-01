@@ -1,0 +1,105 @@
+{
+  "study_id": "vel_15mps",
+  "case_id": "run_01",
+  "coverage_percentage": 50.0,
+  "total_required_outputs": 10,
+  "generated_required_outputs": 5,
+  "unsupported_outputs_count": 3,
+  "unsupported_outputs": [
+    "Acoustic combustion instability transfer function (requires dynamic acoustic driver, not modeled in quasi-steady BATES)",
+    "Discrete phase Lagrangian aluminum droplet tracking (requires multiphase spray solver, not modeled in gaseous equilibrium)",
+    "MHD magnetic Hall current coupling (requires active external magnetic field, zero-field assumption in clear fluid)"
+  ],
+  "items": [
+    {
+      "field_name": "pressure_field",
+      "field_type": "RAW_FIELD",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "NOT_GENERATED",
+      "artifact_path": "pressure.csv",
+      "description": "Static pressure field"
+    },
+    {
+      "field_name": "velocity_field",
+      "field_type": "RAW_FIELD",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "NOT_GENERATED",
+      "artifact_path": "velocity.csv",
+      "description": "Velocity vector field"
+    },
+    {
+      "field_name": "surface_cp",
+      "field_type": "DERIVED_QUANTITY",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "NOT_GENERATED",
+      "artifact_path": "surface_cp.csv",
+      "description": "Surface pressure coefficient distribution"
+    },
+    {
+      "field_name": "surface_tau_w",
+      "field_type": "DERIVED_QUANTITY",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "GENERATED",
+      "artifact_path": "post/plots/coordinates/surface_shear_stress_distribution_coordinates.csv",
+      "description": "Wall shear stress distribution"
+    },
+    {
+      "field_name": "surface_yplus",
+      "field_type": "DERIVED_QUANTITY",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "GENERATED",
+      "artifact_path": "post/plots/coordinates/surface_yplus_distribution_coordinates.csv",
+      "description": "Local non-dimensional wall distance y+"
+    },
+    {
+      "field_name": "forces_history",
+      "field_type": "CONVERGENCE_HISTORY",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "GENERATED",
+      "artifact_path": "post/data/forces.csv",
+      "description": "Lift, drag, and moment iterative convergence"
+    },
+    {
+      "field_name": "residuals",
+      "field_type": "CONVERGENCE_HISTORY",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "GENERATED",
+      "artifact_path": "post/data/residuals.csv",
+      "description": "Iterative residual history"
+    },
+    {
+      "field_name": "sampled_10pts",
+      "field_type": "SURFACE_SAMPLING",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "NOT_GENERATED",
+      "artifact_path": "foil_surface_sampled_10pts.csv",
+      "description": "10-point surface sampling per foil"
+    },
+    {
+      "field_name": "mesh_counts",
+      "field_type": "MESH",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "NOT_GENERATED",
+      "artifact_path": "mesh.txt",
+      "description": "Discretized mesh topology and cells"
+    },
+    {
+      "field_name": "research_pdf",
+      "field_type": "DELIVERABLE",
+      "category": "AERODYNAMICS",
+      "required": true,
+      "status": "GENERATED",
+      "artifact_path": "reports/research_paper.pdf",
+      "description": "Scientific research paper PDF manuscript"
+    }
+  ]
+}
