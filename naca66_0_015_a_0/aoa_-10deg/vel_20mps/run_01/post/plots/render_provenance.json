@@ -1,0 +1,346 @@
+{
+  "plots": {
+    "Q_criterion": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "Q_criterion",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        3.4588759813856147e-07,
+        145139999.8051483
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        3.112558685028176e-05,
+        138970036.72328883
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "adverse_pressure_gradient_dpdx": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "adverse_pressure_gradient_dpdx",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -112722.11964844144,
+        50846.06076931888
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        -112722.11964844144,
+        50846.06076931888
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "density_gradient": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "density_gradient",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        1.8064814355160686e-05,
+        1.2511538733803058
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        1.8064814355160686e-05,
+        1.2511538733803058
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "mach": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "mach",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        0.00038771423184421114,
+        0.08576811924680143
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        0.0009910528517159544,
+        0.08553461265540019
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "nuTilda": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "nuTilda",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        4.1182724158571866e-05,
+        0.00539847931632527
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        4.370900299192635e-05,
+        0.005361812477305794
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "pressure": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "pressure",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -394.907842453273,
+        274.4460235906222
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        -358.10992027189485,
+        264.26172770648014
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "static_cp": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "static_cp",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -1.4616731439669175,
+        1.0786192967611434
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        -1.4616731439669175,
+        1.0786192967611434
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "strain_rate_magnitude": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "strain_rate_magnitude",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        0.4046051576052336,
+        9754.387467222634
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        0.4046051576052336,
+        9754.387467222634
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "temperature": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "temperature",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        292.6215028136665,
+        294.1301323132713
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        292.62447397132445,
+        294.1144520721008
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "total_pressure": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "total_pressure",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -233.86696869220623,
+        316.6054712125889
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        -233.86696869220623,
+        316.6054712125889
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "total_pressure_loss": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "total_pressure_loss",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -0.3812432677231904,
+        1.9545951000762456
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        -0.2958228282295919,
+        1.9543881883807521
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "turbulent_kinetic_energy_k": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "turbulent_kinetic_energy_k",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        3.155103243569325e-08,
+        38.64964478155003
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        3.155103243569325e-08,
+        38.64964478155003
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "turbulent_viscosity_ratio": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "turbulent_viscosity_ratio",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        0.19160230255202987,
+        357.4513639690052
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        0.19160230255202987,
+        357.4513639690052
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "u_velocity": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "u_velocity",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -6.796131871767605,
+        29.128908250830335
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        -6.796131871767605,
+        29.128908250830335
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "v_velocity": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "v_velocity",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -18.905677966966973,
+        7.727296279914116
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        -18.905677966966973,
+        7.727296279914116
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "velocity_magnitude": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "velocity_magnitude",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        0.13308131071190393,
+        29.439223637528176
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        0.3402304485458235,
+        29.359324664307593
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "viscous_dissipation": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "viscous_dissipation",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        3.6411225147786023e-06,
+        44641.91871013998
+      ],
+      "reconstruction": "native_point_data",
+      "rendered_range": [
+        3.6411225147786023e-06,
+        44641.91871013998
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    },
+    "vorticity": {
+      "cell_count": 34700,
+      "data_type": "CELL_DATA",
+      "field": "vorticity",
+      "gaussian_filter": false,
+      "node_count": 35306,
+      "range_expanded": false,
+      "raw_range": [
+        -19632.764747986766,
+        24094.812703579857
+      ],
+      "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
+      "rendered_range": [
+        -19631.795948808736,
+        23571.297779663997
+      ],
+      "source": "native_solver_vtk",
+      "synthetic_field": false
+    }
+  }
+}
