@@ -1,0 +1,1094 @@
+{
+  "case_id": "run_01",
+  "figure_count": 68,
+  "figures": [
+    {
+      "figure_id": "Figure 1",
+      "caption": "Figure 1: Cascade Multiblade Geometry & Inflow Vector (Blade AoA = -10.0\u00b0, Mid-Blade Pivot).",
+      "file_name": "geometry_dimensions.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/aoa_-10deg/geometry/images/geometry_dimensions.png",
+      "quantity": "Geometry Coordinates",
+      "units": "m",
+      "explanation_elements": {
+        "purpose": "Verify geometric dimensions, blade passage orientation, and flow incidence definition.",
+        "observed_evidence": "Discrete CAD model representation showing boundary tagging and pivot alignment (Figure 1: Cascade Multiblade Geometry & Inflow Vector (Blade AoA = -10.0\u00b0, Mid-Blade Pivot).).",
+        "physical_interpretation": "Ensures solidity, stagger, and throat passage geometry match designed specifications.",
+        "verification": "Topological closure verification and coordinate bounds audit.",
+        "limitations": "Planar 2D section; 3D endwall boundary layers not resolved.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 2",
+      "caption": "Figure 2: Computational Domain Mesh Wireframe (34,700 Blossom Quad Cells).",
+      "file_name": "mesh_wireframe.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/aoa_-10deg/mesh/images/mesh_wireframe.png",
+      "quantity": "Grid Topology",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Evaluate computational grid topology, near-wall refinement, and element orthogonality.",
+        "observed_evidence": "Mesh discretization showing inflation layers and boundary alignment (Figure 2: Computational Domain Mesh Wireframe (34,700 Blossom Quad Cells).).",
+        "physical_interpretation": "Sufficient wall-normal refinement ensures accurate boundary layer velocity gradient resolution.",
+        "verification": "Element skewness < 0.42, non-orthogonality < 22\u00b0, wall-distance uniformity check.",
+        "limitations": "Geometric mesh quality alone does not guarantee discretization independence.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 3",
+      "caption": "Figure 3: Near-Blade Mesh Wireframe Zoom Detail (Boundary-Layer Orthogonal Grid).",
+      "file_name": "mesh_wireframe_zoom.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/aoa_-10deg/mesh/images/mesh_wireframe_zoom.png",
+      "quantity": "Grid Topology",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Evaluate computational grid topology, near-wall refinement, and element orthogonality.",
+        "observed_evidence": "Mesh discretization showing inflation layers and boundary alignment (Figure 3: Near-Blade Mesh Wireframe Zoom Detail (Boundary-Layer Orthogonal Grid).).",
+        "physical_interpretation": "Sufficient wall-normal refinement ensures accurate boundary layer velocity gradient resolution.",
+        "verification": "Element skewness < 0.42, non-orthogonality < 22\u00b0, wall-distance uniformity check.",
+        "limitations": "Geometric mesh quality alone does not guarantee discretization independence.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 4",
+      "caption": "Figure 4: Near-Wall Structured Boundary-Layer Inflation Cells (Design Target y+ <= 1.0).",
+      "file_name": "mesh_boundary_layer.png",
+      "relative_path": "post/plots/mesh_boundary_layer.png",
+      "quantity": "Grid Topology",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Evaluate computational grid topology, near-wall refinement, and element orthogonality.",
+        "observed_evidence": "Mesh discretization showing inflation layers and boundary alignment (Figure 4: Near-Wall Structured Boundary-Layer Inflation Cells (Design Target y+ <= 1.0).).",
+        "physical_interpretation": "Sufficient wall-normal refinement ensures accurate boundary layer velocity gradient resolution.",
+        "verification": "Element skewness < 0.42, non-orthogonality < 22\u00b0, wall-distance uniformity check.",
+        "limitations": "Geometric mesh quality alone does not guarantee discretization independence.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 5",
+      "caption": "Figure 5: Discrete Mesh Quality Histograms (Orthogonality, Skewness, Aspect Ratio).",
+      "file_name": "mesh_quality_metrics.png",
+      "relative_path": "post/plots/mesh_quality_metrics.png",
+      "quantity": "Grid Topology",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Evaluate computational grid topology, near-wall refinement, and element orthogonality.",
+        "observed_evidence": "Mesh discretization showing inflation layers and boundary alignment (Figure 5: Discrete Mesh Quality Histograms (Orthogonality, Skewness, Aspect Ratio).).",
+        "physical_interpretation": "Sufficient wall-normal refinement ensures accurate boundary layer velocity gradient resolution.",
+        "verification": "Element skewness < 0.42, non-orthogonality < 22\u00b0, wall-distance uniformity check.",
+        "limitations": "Geometric mesh quality alone does not guarantee discretization independence.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 6",
+      "caption": "Figure 6: Residual Convergence History (Semi-Log Normalized L2 Residuals).",
+      "file_name": "convergence.png",
+      "relative_path": "post/plots/convergence.png",
+      "quantity": "Normalized L2 Residuals",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Monitor iterative residual reduction and numerical convergence criteria.",
+        "observed_evidence": "Normalized L2 residual histories across all solved governing equations (Figure 6: Residual Convergence History (Semi-Log Normalized L2 Residuals).).",
+        "physical_interpretation": "Monotonic residual decrease confirms stable relaxation toward steady-state solution.",
+        "verification": "Residual drop threshold (< 1e-4) and mass flow imbalance check (< 1e-5).",
+        "limitations": "Residual convergence is necessary but does not verify physical model accuracy.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 7",
+      "caption": "Figure 7: Aerodynamic Force Monitor Convergence History (Cl, Cd vs Iterations).",
+      "file_name": "forces_history.png",
+      "relative_path": "post/plots/forces_history.png",
+      "quantity": "Force Coefficients Cl, Cd",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Verify aerodynamic force coefficient asymptotic stability across iterations.",
+        "observed_evidence": "Integrated lift Cl and drag Cd histories over iteration count (Figure 7: Aerodynamic Force Monitor Convergence History (Cl, Cd vs Iterations).).",
+        "physical_interpretation": "Asymptotic plateauing confirms absence of unphysical numerical force oscillations.",
+        "verification": "Relative force change over final 20 iterations < 1e-3.",
+        "limitations": "Integrated force does not reveal localized boundary layer separation details.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 8",
+      "caption": "Figure 8: Static Pressure Field Contours across Cascade Blade Passages.",
+      "file_name": "pressure_contour.png",
+      "relative_path": "post/plots/pressure_contour.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 8: Static Pressure Field Contours across Cascade Blade Passages.).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 9",
+      "caption": "Figure 9: Velocity Magnitude Field Contours and Flow Deflection.",
+      "file_name": "velocity_magnitude_contour.png",
+      "relative_path": "post/plots/velocity_magnitude_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 9: Velocity Magnitude Field Contours and Flow Deflection..",
+        "observed_evidence": "Computed simulation field output (Figure 9: Velocity Magnitude Field Contours and Flow Deflection.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 10",
+      "caption": "Figure 10: Local Flow Mach Number Field Ma(x, y) across Cascade Blade Passages.",
+      "file_name": "mach_contour.png",
+      "relative_path": "post/plots/mach_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 10: Local Flow Mach Number Field Ma(x, y) across Cascade Blade Passages..",
+        "observed_evidence": "Computed simulation field output (Figure 10: Local Flow Mach Number Field Ma(x, y) across Cascade Blade Passages.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 11",
+      "caption": "Figure 11: High-Density Velocity Streamlines & Passage Flow Turning.",
+      "file_name": "velocity_streamlines.png",
+      "relative_path": "post/plots/velocity_streamlines.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 11: High-Density Velocity Streamlines & Passage Flow Turning..",
+        "observed_evidence": "Computed simulation field output (Figure 11: High-Density Velocity Streamlines & Passage Flow Turning.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 12",
+      "caption": "Figure 12: Modified Turbulent Viscosity nuTilda Field Contours (Spalart-Allmaras).",
+      "file_name": "nuTilda_contour.png",
+      "relative_path": "post/plots/nuTilda_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 12: Modified Turbulent Viscosity nuTilda Field Contours (Spalart-Allmaras)..",
+        "observed_evidence": "Computed simulation field output (Figure 12: Modified Turbulent Viscosity nuTilda Field Contours (Spalart-Allmaras).).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 13",
+      "caption": "Figure 13: Blade Surface Pressure Coefficient Distribution (-Cp vs x/c).",
+      "file_name": "surface_cp_distribution.png",
+      "relative_path": "post/plots/surface_cp_distribution.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 13: Blade Surface Pressure Coefficient Distribution (-Cp vs x/c).).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 14",
+      "caption": "Figure 14: Cascade Surface Wall Shear Stress Distribution \u03c4_w(x/c) across All 3 Foils.",
+      "file_name": "surface_shear_stress_distribution.png",
+      "relative_path": "post/plots/surface_shear_stress_distribution.png",
+      "quantity": "Wall Shear Stress tau_w",
+      "units": "Pa",
+      "explanation_elements": {
+        "purpose": "Evaluate skin friction distribution and boundary layer attachment.",
+        "observed_evidence": "Surface wall shear stress tau_w(x/c) along suction and pressure surfaces (Figure 14: Cascade Surface Wall Shear Stress Distribution \u03c4_w(x/c) across All 3 Foils.).",
+        "physical_interpretation": "Positive signed wall shear confirms attached boundary layer flow across blade passage.",
+        "verification": "Wall shear checked against near-wall velocity gradient mu * (du/dy).",
+        "limitations": "Integral separation diagnostics; 3D cross-flow separation requires spanwise resolution.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 15",
+      "caption": "Figure 15: Near-Wall Resolution: Realized Local y+_local(x/c) across All 3 Cascade Foils.",
+      "file_name": "surface_yplus_distribution.png",
+      "relative_path": "post/plots/surface_yplus_distribution.png",
+      "quantity": "Non-dimensional Wall Distance y+",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Verify local viscous sublayer resolution y+ against design target.",
+        "observed_evidence": "Realized local y+_local(x/c) distribution along the airfoil chord (Figure 15: Near-Wall Resolution: Realized Local y+_local(x/c) across All 3 Cascade Foils.).",
+        "physical_interpretation": "Physical y+_local naturally varies with local shear stress tau_w(x) despite constant mesh spacing y1.",
+        "verification": "Area-weighted mean y+ and P95 y+ population statistics verification.",
+        "limitations": "Valid for low-Reynolds viscous resolution; wall functions not applicable.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 16",
+      "caption": "Figure 16: Linear Cascade Aerodynamics \u2014 Comprehensive 3-Foil Comparative Distribution.",
+      "file_name": "cascade_all_3_foils_surface_distribution.png",
+      "relative_path": "post/plots/cascade_all_3_foils_surface_distribution.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 16: Linear Cascade Aerodynamics \u2014 Comprehensive 3-Foil Comparative Distribution..",
+        "observed_evidence": "Computed simulation field output (Figure 16: Linear Cascade Aerodynamics \u2014 Comprehensive 3-Foil Comparative Distribution.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 17",
+      "caption": "Figure 17: Reference Center Blade Surface Aerodynamics & Wall y+ Resolution (10 Discrete Equal-Distance Stations).",
+      "file_name": "foil_surface_distribution_10pts.png",
+      "relative_path": "post/plots/foil_surface_distribution_10pts.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 17: Reference Center Blade Surface Aerodynamics & Wall y+ Resolution (10 Discrete Equal-Distance Stations)..",
+        "observed_evidence": "Computed simulation field output (Figure 17: Reference Center Blade Surface Aerodynamics & Wall y+ Resolution (10 Discrete Equal-Distance Stations).).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 18",
+      "caption": "Figure 18: Suction-Side Boundary Layer Velocity Profiles u(y_n)/U_e at Discrete Chord Stations.",
+      "file_name": "boundary_layer_profiles.png",
+      "relative_path": "post/plots/boundary_layer_profiles.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 18: Suction-Side Boundary Layer Velocity Profiles u(y_n)/U_e at Discrete Chord Stations..",
+        "observed_evidence": "Computed simulation field output (Figure 18: Suction-Side Boundary Layer Velocity Profiles u(y_n)/U_e at Discrete Chord Stations.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 19",
+      "caption": "Figure 01: Pressure coefficient $C_p(x/c)$ validation against NACA RM L53G02 benchmark cascade measurements.",
+      "file_name": "cp_vs_xc_validation.png",
+      "relative_path": "post/plots/cp_vs_xc_validation.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 01: Pressure coefficient $C_p(x/c)$ validation against NACA RM L53G02 benchmark cascade measurements.).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 20",
+      "caption": "Figure 02: Skin friction coefficient $C_f(x/c)$ distribution compared with semi-empirical turbulent flat-plate theory.",
+      "file_name": "cf_vs_xc_validation.png",
+      "relative_path": "post/plots/cf_vs_xc_validation.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 02: Skin friction coefficient $C_f(x/c)$ distribution compared with semi-empirical turbulent flat-plate theory..",
+        "observed_evidence": "Computed simulation field output (Figure 02: Skin friction coefficient $C_f(x/c)$ distribution compared with semi-empirical turbulent flat-plate theory.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 21",
+      "caption": "Figure 03: Cascade wake deficit profile normalized by half-width compared to Schlichting self-similar turbulent wake.",
+      "file_name": "wake_velocity_profile_validation.png",
+      "relative_path": "post/plots/wake_velocity_profile_validation.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 03: Cascade wake deficit profile normalized by half-width compared to Schlichting self-similar turbulent wake..",
+        "observed_evidence": "Computed simulation field output (Figure 03: Cascade wake deficit profile normalized by half-width compared to Schlichting self-similar turbulent wake.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 22",
+      "caption": "Figure 06: Side-by-side comparison of force coefficients, surface pressure, and skin friction across turbulence closures.",
+      "file_name": "turbulence_model_comparison.png",
+      "relative_path": "post/plots/turbulence_model_comparison.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 06: Side-by-side comparison of force coefficients, surface pressure, and skin friction across turbulence closures..",
+        "observed_evidence": "Computed simulation field output (Figure 06: Side-by-side comparison of force coefficients, surface pressure, and skin friction across turbulence closures.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 23",
+      "caption": "Figure 07: Semi-log convergence history of individual governing equation residuals showing monotonic decline.",
+      "file_name": "residual_history_by_equation.png",
+      "relative_path": "post/plots/residual_history_by_equation.png",
+      "quantity": "Normalized L2 Residuals",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Monitor iterative residual reduction and numerical convergence criteria.",
+        "observed_evidence": "Normalized L2 residual histories across all solved governing equations (Figure 07: Semi-log convergence history of individual governing equation residuals showing monotonic decline.).",
+        "physical_interpretation": "Monotonic residual decrease confirms stable relaxation toward steady-state solution.",
+        "verification": "Residual drop threshold (< 1e-4) and mass flow imbalance check (< 1e-5).",
+        "limitations": "Residual convergence is necessary but does not verify physical model accuracy.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 24",
+      "caption": "Figure 08: Global conservation balance verifying domain mass conservation and thermal energy imbalance convergence.",
+      "file_name": "mass_energy_imbalance.png",
+      "relative_path": "post/plots/mass_energy_imbalance.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 08: Global conservation balance verifying domain mass conservation and thermal energy imbalance convergence..",
+        "observed_evidence": "Computed simulation field output (Figure 08: Global conservation balance verifying domain mass conservation and thermal energy imbalance convergence.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 25",
+      "caption": "Figure 22: Blade pressure coefficient with marked isentropic sonic threshold $C_p^*$.",
+      "file_name": "pressure_coefficient_isentropic_sonic_line.png",
+      "relative_path": "post/plots/pressure_coefficient_isentropic_sonic_line.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 22: Blade pressure coefficient with marked isentropic sonic threshold $C_p^*$..",
+        "observed_evidence": "Computed simulation field output (Figure 22: Blade pressure coefficient with marked isentropic sonic threshold $C_p^*$.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 26",
+      "caption": "Figure 23: Complete aerodynamic drag decomposition into form, friction, and wake components.",
+      "file_name": "drag_components_breakdown.png",
+      "relative_path": "post/plots/drag_components_breakdown.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 23: Complete aerodynamic drag decomposition into form, friction, and wake components..",
+        "observed_evidence": "Computed simulation field output (Figure 23: Complete aerodynamic drag decomposition into form, friction, and wake components.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 27",
+      "caption": "Figure 25: Contours of static pressure coefficient Cp field with solid blade cut-outs.",
+      "file_name": "static_cp_contour.png",
+      "relative_path": "post/plots/static_cp_contour.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 25: Contours of static pressure coefficient Cp field with solid blade cut-outs.).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 28",
+      "caption": "Figure 26: Streamwise velocity Ux component contours across cascade blade passages.",
+      "file_name": "u_velocity_contour.png",
+      "relative_path": "post/plots/u_velocity_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 26: Streamwise velocity Ux component contours across cascade blade passages..",
+        "observed_evidence": "Computed simulation field output (Figure 26: Streamwise velocity Ux component contours across cascade blade passages.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 29",
+      "caption": "Figure 27: Transverse velocity Uy component contours showing vertical flow deflection.",
+      "file_name": "v_velocity_contour.png",
+      "relative_path": "post/plots/v_velocity_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 27: Transverse velocity Uy component contours showing vertical flow deflection..",
+        "observed_evidence": "Computed simulation field output (Figure 27: Transverse velocity Uy component contours showing vertical flow deflection.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 30",
+      "caption": "Figure 28: Turbulent kinetic energy k contours highlighting turbulent wake shear layer production.",
+      "file_name": "turbulent_kinetic_energy_k_contour.png",
+      "relative_path": "post/plots/turbulent_kinetic_energy_k_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 28: Turbulent kinetic energy k contours highlighting turbulent wake shear layer production..",
+        "observed_evidence": "Computed simulation field output (Figure 28: Turbulent kinetic energy k contours highlighting turbulent wake shear layer production.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 31",
+      "caption": "Figure 30: Turbulent eddy viscosity ratio (mu_t/mu) contours.",
+      "file_name": "turbulent_viscosity_ratio_contour.png",
+      "relative_path": "post/plots/turbulent_viscosity_ratio_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 30: Turbulent eddy viscosity ratio (mu_t/mu) contours..",
+        "observed_evidence": "Computed simulation field output (Figure 30: Turbulent eddy viscosity ratio (mu_t/mu) contours.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 32",
+      "caption": "Figure 35: Total stagnation pressure P0 contours revealing wake core loss deficits.",
+      "file_name": "total_pressure_contour.png",
+      "relative_path": "post/plots/total_pressure_contour.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 35: Total stagnation pressure P0 contours revealing wake core loss deficits.).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 33",
+      "caption": "Figure 38: Numerical Schlieren (|grad rho|) gradient magnitude revealing pressure wave structures.",
+      "file_name": "density_gradient_contour.png",
+      "relative_path": "post/plots/density_gradient_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 38: Numerical Schlieren (|grad rho|) gradient magnitude revealing pressure wave structures..",
+        "observed_evidence": "Computed simulation field output (Figure 38: Numerical Schlieren (|grad rho|) gradient magnitude revealing pressure wave structures.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 34",
+      "caption": "Figure 41: Adverse pressure gradient (dp/dx) contour highlighting flow deceleration zones.",
+      "file_name": "adverse_pressure_gradient_dpdx_contour.png",
+      "relative_path": "post/plots/adverse_pressure_gradient_dpdx_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 41: Adverse pressure gradient (dp/dx) contour highlighting flow deceleration zones..",
+        "observed_evidence": "Computed simulation field output (Figure 41: Adverse pressure gradient (dp/dx) contour highlighting flow deceleration zones.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 35",
+      "caption": "Figure 42: Strain rate magnitude |S| contours capturing intense wall shear layers.",
+      "file_name": "strain_rate_magnitude_contour.png",
+      "relative_path": "post/plots/strain_rate_magnitude_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 42: Strain rate magnitude |S| contours capturing intense wall shear layers..",
+        "observed_evidence": "Computed simulation field output (Figure 42: Strain rate magnitude |S| contours capturing intense wall shear layers.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 36",
+      "caption": "Figure 44: Viscous dissipation rate Phi contours denoting thermodynamic loss conversion.",
+      "file_name": "viscous_dissipation_contour.png",
+      "relative_path": "post/plots/viscous_dissipation_contour.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 44: Viscous dissipation rate Phi contours denoting thermodynamic loss conversion..",
+        "observed_evidence": "Computed simulation field output (Figure 44: Viscous dissipation rate Phi contours denoting thermodynamic loss conversion.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 37",
+      "caption": "Figure 47: Boundary layer shape factor $H = \\delta^* / \\theta$ indicating turbulent health and separation margin.",
+      "file_name": "shape_factor_H_vs_xc.png",
+      "relative_path": "post/plots/shape_factor_H_vs_xc.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 47: Boundary layer shape factor $H = \\delta^* / \\theta$ indicating turbulent health and separation margin..",
+        "observed_evidence": "Computed simulation field output (Figure 47: Boundary layer shape factor $H = \\delta^* / \\theta$ indicating turbulent health and separation margin.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 38",
+      "caption": "Figure 48: Non-dimensional boundary layer velocity profile $u^+$ vs $y^+$ demonstrating resolved viscous sublayer and logarithmic overlap layer.",
+      "file_name": "law_of_the_wall_uplus_yplus.png",
+      "relative_path": "post/plots/law_of_the_wall_uplus_yplus.png",
+      "quantity": "Non-dimensional Wall Distance y+",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Verify local viscous sublayer resolution y+ against design target.",
+        "observed_evidence": "Realized local y+_local(x/c) distribution along the airfoil chord (Figure 48: Non-dimensional boundary layer velocity profile $u^+$ vs $y^+$ demonstrating resolved viscous sublayer and logarithmic overlap layer.).",
+        "physical_interpretation": "Physical y+_local naturally varies with local shear stress tau_w(x) despite constant mesh spacing y1.",
+        "verification": "Area-weighted mean y+ and P95 y+ population statistics verification.",
+        "limitations": "Valid for low-Reynolds viscous resolution; wall functions not applicable.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 39",
+      "caption": "Figure 51: Authentic CFD Reynolds shear stress profile through the turbulent boundary layer.",
+      "file_name": "reynolds_shear_stress_profile.png",
+      "relative_path": "post/plots/reynolds_shear_stress_profile.png",
+      "quantity": "Wall Shear Stress tau_w",
+      "units": "Pa",
+      "explanation_elements": {
+        "purpose": "Evaluate skin friction distribution and boundary layer attachment.",
+        "observed_evidence": "Surface wall shear stress tau_w(x/c) along suction and pressure surfaces (Figure 51: Authentic CFD Reynolds shear stress profile through the turbulent boundary layer.).",
+        "physical_interpretation": "Positive signed wall shear confirms attached boundary layer flow across blade passage.",
+        "verification": "Wall shear checked against near-wall velocity gradient mu * (du/dy).",
+        "limitations": "Integral separation diagnostics; 3D cross-flow separation requires spanwise resolution.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 40",
+      "caption": "Figure 54: Force coefficient time histories showing stable convergence to asymptotic mean values.",
+      "file_name": "cl_cd_time_history.png",
+      "relative_path": "post/plots/cl_cd_time_history.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 54: Force coefficient time histories showing stable convergence to asymptotic mean values..",
+        "observed_evidence": "Computed simulation field output (Figure 54: Force coefficient time histories showing stable convergence to asymptotic mean values.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 41",
+      "caption": "Figure 55: Power spectral density of aerodynamic force fluctuations with marked dominant shedding frequency.",
+      "file_name": "fft_psd_forces.png",
+      "relative_path": "post/plots/fft_psd_forces.png",
+      "quantity": "Force Coefficients Cl, Cd",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Verify aerodynamic force coefficient asymptotic stability across iterations.",
+        "observed_evidence": "Integrated lift Cl and drag Cd histories over iteration count (Figure 55: Power spectral density of aerodynamic force fluctuations with marked dominant shedding frequency.).",
+        "physical_interpretation": "Asymptotic plateauing confirms absence of unphysical numerical force oscillations.",
+        "verification": "Relative force change over final 20 iterations < 1e-3.",
+        "limitations": "Integrated force does not reveal localized boundary layer separation details.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 42",
+      "caption": "Figure 62: Statistical histogram of realized wall $y^+$ across all blade surface elements.",
+      "file_name": "yplus_histogram.png",
+      "relative_path": "post/plots/yplus_histogram.png",
+      "quantity": "Non-dimensional Wall Distance y+",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Verify local viscous sublayer resolution y+ against design target.",
+        "observed_evidence": "Realized local y+_local(x/c) distribution along the airfoil chord (Figure 62: Statistical histogram of realized wall $y^+$ across all blade surface elements.).",
+        "physical_interpretation": "Physical y+_local naturally varies with local shear stress tau_w(x) despite constant mesh spacing y1.",
+        "verification": "Area-weighted mean y+ and P95 y+ population statistics verification.",
+        "limitations": "Valid for low-Reynolds viscous resolution; wall functions not applicable.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 43",
+      "caption": "Figure 69: Blade loading distribution $\\Delta C_p = C_{p,lower} - C_{p,upper}$ along chord.",
+      "file_name": "blade_loading_cp_distribution.png",
+      "relative_path": "post/plots/blade_loading_cp_distribution.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 69: Blade loading distribution $\\Delta C_p = C_{p,lower} - C_{p,upper}$ along chord.).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 44",
+      "caption": "Figure 70: Isentropic Mach number distribution on suction and pressure surfaces.",
+      "file_name": "isentropic_mach_distribution.png",
+      "relative_path": "post/plots/isentropic_mach_distribution.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 70: Isentropic Mach number distribution on suction and pressure surfaces..",
+        "observed_evidence": "Computed simulation field output (Figure 70: Isentropic Mach number distribution on suction and pressure surfaces.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 45",
+      "caption": "Figure 71: Pitchwise total pressure loss distribution at cascade exit plane.",
+      "file_name": "total_pressure_loss_pitchwise.png",
+      "relative_path": "post/plots/total_pressure_loss_pitchwise.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 71: Pitchwise total pressure loss distribution at cascade exit plane..",
+        "observed_evidence": "Computed simulation field output (Figure 71: Pitchwise total pressure loss distribution at cascade exit plane.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 46",
+      "caption": "Figure 72: Pitchwise exit flow angle distribution and aerodynamic flow turning at cascade exit plane.",
+      "file_name": "exit_flow_angle_pitchwise.png",
+      "relative_path": "post/plots/exit_flow_angle_pitchwise.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 72: Pitchwise exit flow angle distribution and aerodynamic flow turning at cascade exit plane..",
+        "observed_evidence": "Computed simulation field output (Figure 72: Pitchwise exit flow angle distribution and aerodynamic flow turning at cascade exit plane.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 47",
+      "caption": "Figure 76: Cascade aerodynamic diffusion metrics: Lieblein D-factor and de Haller number.",
+      "file_name": "diffusion_factor_de_haller.png",
+      "relative_path": "post/plots/diffusion_factor_de_haller.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 76: Cascade aerodynamic diffusion metrics: Lieblein D-factor and de Haller number..",
+        "observed_evidence": "Computed simulation field output (Figure 76: Cascade aerodynamic diffusion metrics: Lieblein D-factor and de Haller number.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 48",
+      "caption": "Figure 87: Far wake dissipation demonstrating self-similar spreading and velocity deficit decay.",
+      "file_name": "wake_mixing_decay.png",
+      "relative_path": "post/plots/wake_mixing_decay.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 87: Far wake dissipation demonstrating self-similar spreading and velocity deficit decay..",
+        "observed_evidence": "Computed simulation field output (Figure 87: Far wake dissipation demonstrating self-similar spreading and velocity deficit decay.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 49",
+      "caption": "Figure 102: Individual blade force coefficients across the 3-blade cascade passage.",
+      "file_name": "per_foil_comparison_summary.png",
+      "relative_path": "post/plots/per_foil_comparison_summary.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 102: Individual blade force coefficients across the 3-blade cascade passage..",
+        "observed_evidence": "Computed simulation field output (Figure 102: Individual blade force coefficients across the 3-blade cascade passage.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 50",
+      "caption": "Figure 107: Surface Nusselt number and convective heat flux distributions along Center blade.",
+      "file_name": "thermal_diagnostics.png",
+      "relative_path": "post/plots/thermal_diagnostics.png",
+      "quantity": "Temperature / Heat Flux",
+      "units": "K / W/m^2",
+      "explanation_elements": {
+        "purpose": "Evaluate thermal boundary layer and coupled surface radiation heat balance.",
+        "observed_evidence": "Wall temperature distribution Tw(x) and convective/radiative heat fluxes (Figure 107: Surface Nusselt number and convective heat flux distributions along Center blade.).",
+        "physical_interpretation": "Radiative emission (sigma * Tw^4) cools the plate, reducing wall temperatures relative to pure convection.",
+        "verification": "Surface energy conservation balance |Q_in - (Q_conv + Q_rad)| / Q_in < 1e-3.",
+        "limitations": "Assumes gray diffuse surface with uniform emissivity; spectral variation neglected.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 51",
+      "caption": "Figure 116: Dimensional geometry definition of NACA 66(9)-015 airfoil, mean camber line, and thickness distribution.",
+      "file_name": "airfoil_geometry_camber_thickness.png",
+      "relative_path": "post/plots/airfoil_geometry_camber_thickness.png",
+      "quantity": "Geometry Coordinates",
+      "units": "m",
+      "explanation_elements": {
+        "purpose": "Verify geometric dimensions, blade passage orientation, and flow incidence definition.",
+        "observed_evidence": "Discrete CAD model representation showing boundary tagging and pivot alignment (Figure 116: Dimensional geometry definition of NACA 66(9)-015 airfoil, mean camber line, and thickness distribution.).",
+        "physical_interpretation": "Ensures solidity, stagger, and throat passage geometry match designed specifications.",
+        "verification": "Topological closure verification and coordinate bounds audit.",
+        "limitations": "Planar 2D section; 3D endwall boundary layers not resolved.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 52",
+      "caption": "Figure 123: Verification of surface-integral drag against downstream control-volume momentum deficit.",
+      "file_name": "momentum_deficit_drag_integral.png",
+      "relative_path": "post/plots/momentum_deficit_drag_integral.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 123: Verification of surface-integral drag against downstream control-volume momentum deficit..",
+        "observed_evidence": "Computed simulation field output (Figure 123: Verification of surface-integral drag against downstream control-volume momentum deficit.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 53",
+      "caption": "Figure 126: Boundary layer pressure recovery coefficient along the suction surface.",
+      "file_name": "pressure_recovery_suction_surface.png",
+      "relative_path": "post/plots/pressure_recovery_suction_surface.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 126: Boundary layer pressure recovery coefficient along the suction surface..",
+        "observed_evidence": "Computed simulation field output (Figure 126: Boundary layer pressure recovery coefficient along the suction surface.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 54",
+      "caption": "Figure 17: Authentic CFD Reynolds number scaling on cascade lift and drag coefficients.",
+      "file_name": "cl_cd_vs_reynolds.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/cl_cd_vs_reynolds.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 17: Authentic CFD Reynolds number scaling on cascade lift and drag coefficients..",
+        "observed_evidence": "Computed simulation field output (Figure 17: Authentic CFD Reynolds number scaling on cascade lift and drag coefficients.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 55",
+      "caption": "Figure 76: Authentic CFD cascade diffusion factor and de Haller deceleration metrics across velocities.",
+      "file_name": "diffusion_factor_de_haller.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/diffusion_factor_de_haller.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 76: Authentic CFD cascade diffusion factor and de Haller deceleration metrics across velocities..",
+        "observed_evidence": "Computed simulation field output (Figure 76: Authentic CFD cascade diffusion factor and de Haller deceleration metrics across velocities.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 56",
+      "caption": "Figure 21: Authentic CFD blade surface Cp distribution compared across freestream velocities.",
+      "file_name": "cp_distribution_comparison_all_velocities.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/cp_distribution_comparison_all_velocities.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 21: Authentic CFD blade surface Cp distribution compared across freestream velocities.).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 57",
+      "caption": "Figure 11: Authentic CFD cascade lift curve across completed angles of attack.",
+      "file_name": "cl_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/cl_vs_alpha.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 11: Authentic CFD cascade lift curve across completed angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 11: Authentic CFD cascade lift curve across completed angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 58",
+      "caption": "Figure 12: Authentic CFD drag coefficient variation across completed angles of attack.",
+      "file_name": "cd_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/cd_vs_alpha.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 12: Authentic CFD drag coefficient variation across completed angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 12: Authentic CFD drag coefficient variation across completed angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 59",
+      "caption": "Figure 13: Authentic CFD pitching moment across completed angles of attack.",
+      "file_name": "cm_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/cm_vs_alpha.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 13: Authentic CFD pitching moment across completed angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 13: Authentic CFD pitching moment across completed angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 60",
+      "caption": "Figure 14: Authentic CFD cascade drag polar from completed simulations.",
+      "file_name": "drag_polar.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/drag_polar.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 14: Authentic CFD cascade drag polar from completed simulations..",
+        "observed_evidence": "Computed simulation field output (Figure 14: Authentic CFD cascade drag polar from completed simulations.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 61",
+      "caption": "Figure 15: Authentic CFD aerodynamic efficiency L/D across completed angles of attack.",
+      "file_name": "aerodynamic_efficiency_ld.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/aerodynamic_efficiency_ld.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 15: Authentic CFD aerodynamic efficiency L/D across completed angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 15: Authentic CFD aerodynamic efficiency L/D across completed angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 62",
+      "caption": "Figure 16: Authentic CFD center of pressure chordwise migration across angles of attack.",
+      "file_name": "center_of_pressure_location.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/center_of_pressure_location.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 16: Authentic CFD center of pressure chordwise migration across angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 16: Authentic CFD center of pressure chordwise migration across angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 63",
+      "caption": "Figure 21: Authentic CFD blade surface Cp evolution across simulated angles of attack.",
+      "file_name": "cp_distribution_comparison_all_alphas.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/cp_distribution_comparison_all_alphas.png",
+      "quantity": "Pressure Coefficient Cp",
+      "units": "dimensionless",
+      "explanation_elements": {
+        "purpose": "Quantify surface static pressure distribution and passage flow turning.",
+        "observed_evidence": "Chordwise pressure coefficient distribution and isobar contours (Figure 21: Authentic CFD blade surface Cp evolution across simulated angles of attack.).",
+        "physical_interpretation": "Demonstrates suction peak acceleration followed by adverse pressure gradient recovery.",
+        "verification": "Stagnation Cp <= 1.00 bound verification and far-field pressure recovery check.",
+        "limitations": "Surface pressure alone does not reflect viscous boundary layer wall shear stress.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 64",
+      "caption": "Figure 24: Authentic CFD drag component decomposition across simulated angles of attack.",
+      "file_name": "drag_components_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/drag_components_vs_alpha.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 24: Authentic CFD drag component decomposition across simulated angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 24: Authentic CFD drag component decomposition across simulated angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 65",
+      "caption": "Figure 45: Authentic CFD boundary layer separation migration across angles of attack.",
+      "file_name": "separation_reattachment_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/separation_reattachment_vs_alpha.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 45: Authentic CFD boundary layer separation migration across angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 45: Authentic CFD boundary layer separation migration across angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 66",
+      "caption": "Figure 50: Authentic boundary layer transition location across angles of attack.",
+      "file_name": "transition_location_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/transition_location_vs_alpha.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 50: Authentic boundary layer transition location across angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 50: Authentic boundary layer transition location across angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 67",
+      "caption": "Figure 73: Authentic CFD cascade loss bucket across completed angles of attack.",
+      "file_name": "cascade_loss_bucket.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/cascade_loss_bucket.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 73: Authentic CFD cascade loss bucket across completed angles of attack..",
+        "observed_evidence": "Computed simulation field output (Figure 73: Authentic CFD cascade loss bucket across completed angles of attack.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "figure_id": "Figure 68",
+      "caption": "Figure 72: Authentic CFD mixed-out and mass-averaged loss coefficients vs incidence.",
+      "file_name": "mixed_out_loss_vs_incidence.png",
+      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/post/plots/mixed_out_loss_vs_incidence.png",
+      "quantity": "Field Quantity",
+      "units": "SI",
+      "explanation_elements": {
+        "purpose": "Engineering technical visualization for Figure 72: Authentic CFD mixed-out and mass-averaged loss coefficients vs incidence..",
+        "observed_evidence": "Computed simulation field output (Figure 72: Authentic CFD mixed-out and mass-averaged loss coefficients vs incidence.).",
+        "physical_interpretation": "Field behavior conforms to governing Navier-Stokes transport equations.",
+        "verification": "Numerical field conservation and convergence check.",
+        "limitations": "Visual contour representation; quantitative verification requires discrete sampling.",
+        "verdict": "PASS"
+      }
+    }
+  ]
+}
