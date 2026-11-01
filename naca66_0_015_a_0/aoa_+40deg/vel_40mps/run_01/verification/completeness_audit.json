@@ -1,0 +1,74 @@
+{
+  "overall_status": "REJECTED",
+  "completion_percentage": 75.0,
+  "checklist": [
+    {
+      "check_id": "INP-01",
+      "requirement": "Input parameters recorded with explicit provenance",
+      "verification_method": "File existence check",
+      "evidence_artifact": "inputs/resolved_requirements.json",
+      "status": "FAIL",
+      "notes": "Missing input provenance record."
+    },
+    {
+      "check_id": "GEO-01",
+      "requirement": "Discrete spatial coordinates exported",
+      "verification_method": "Directory check",
+      "evidence_artifact": "geometry/coordinates/",
+      "status": "WARN",
+      "notes": "Surface coordinates not discretely exported in dedicated coordinates folder."
+    },
+    {
+      "check_id": "MSH-01",
+      "requirement": "Mesh quality evaluated with positive cell Jacobians and skewness checks",
+      "verification_method": "Mesh quality gating",
+      "evidence_artifact": "mesh/mesh.md or mesh/mesh_quality_by_state.csv",
+      "status": "PASS",
+      "notes": "Structured quad/prism mesh quality verified."
+    },
+    {
+      "check_id": "YPLUS-01",
+      "requirement": "Actual solver-reported wall y+ extracted and evaluated",
+      "verification_method": "Wall shear stress and y+ field sampling",
+      "evidence_artifact": "post/data/foil_surface_sampled_10pts.csv",
+      "status": "PASS",
+      "notes": "Wall resolution measured and evaluated against boundary layer criteria."
+    },
+    {
+      "check_id": "NUM-01",
+      "requirement": "Iterative solver convergence and conservation documented",
+      "verification_method": "Residual history and conservation analysis",
+      "evidence_artifact": "post/data/residuals.csv or solver/conservation.csv",
+      "status": "PASS",
+      "notes": "Solver reached convergence and mass/energy conservation verified."
+    },
+    {
+      "check_id": "REP-01",
+      "requirement": "Formal engineering report and technical research manuscript compiled",
+      "verification_method": "Document artifact validation",
+      "evidence_artifact": "reports/research_paper.pdf",
+      "status": "PASS",
+      "notes": "Publication PDF and Markdown reports compiled."
+    },
+    {
+      "check_id": "REP-02",
+      "requirement": "Reproducible execution commands logged in procedure.md / commands.jsonl",
+      "verification_method": "Execution log check",
+      "evidence_artifact": "procedure.md",
+      "status": "PASS",
+      "notes": "Step-by-step reproducible execution procedure recorded."
+    },
+    {
+      "check_id": "EEG-01",
+      "requirement": "Evidence Graph free of stale or invalidated upstream dependencies",
+      "verification_method": "DAG traversal & hash validation",
+      "evidence_artifact": "EEG Graph",
+      "status": "PASS",
+      "notes": "All 100% downstream nodes valid."
+    }
+  ],
+  "limitations": [
+    "Spalart-Allmaras 1-equation turbulence model assumes fully turbulent boundary layer unless trip terms active.",
+    "Steady RANS formulation does not resolve transient vortex shedding at deep stall angles."
+  ]
+}
