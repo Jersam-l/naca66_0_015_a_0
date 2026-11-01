@@ -1,0 +1,115 @@
+{
+  "study_id": "cascade_case_73_aoa+20_u15",
+  "nodes": [
+    {
+      "node_id": "req_01",
+      "category": "REQUIREMENT",
+      "label": "Cascade Requirements case_73_aoa+20_u15",
+      "content_hash": "54944ce091298d3ebea2915eedd395c1ab2de1f72dca745ff9ae9757269417d8",
+      "status": "VALID",
+      "properties": {},
+      "file_paths": [
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/requirements/resolved_requirements.json"
+      ],
+      "timestamp": 1793488735.3664439,
+      "invalidation_reason": null
+    },
+    {
+      "node_id": "geom_casc",
+      "category": "GEOMETRY",
+      "label": "Cascade Blades NACA 66(0)-015 AoA=20.0\u00b0",
+      "content_hash": "624a75b624d282caee2faba774508a2eeb52eae56aaa710ea40f646ab77c38bf",
+      "status": "VALID",
+      "properties": {},
+      "file_paths": [
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/geometry/dimensions.csv",
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/geometry/coordinates/all_cascade_blades_coordinates.csv"
+      ],
+      "timestamp": 1793488735.3664823,
+      "invalidation_reason": null
+    },
+    {
+      "node_id": "mesh_quad",
+      "category": "MESH",
+      "label": "Transfinite Blossom Quad Mesh",
+      "content_hash": "016fc19c5f4e39b2a86f0387f35a59184430a4957e51833514b81342c9a0956d",
+      "status": "VALID",
+      "properties": {},
+      "file_paths": [
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/mesh/mesh.msh",
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/native_solver/mesh.txt"
+      ],
+      "timestamp": 1793488735.3665063,
+      "invalidation_reason": null
+    },
+    {
+      "node_id": "solv_simple",
+      "category": "EXECUTION_RUN",
+      "label": "Native SIMPLE FVM Solver with SA Turbulence",
+      "content_hash": "3d917b1b9d8e9dfc7004f8c598680fa4ddb0e0d695ab39e12ef62c7d9a168192",
+      "status": "VALID",
+      "properties": {},
+      "file_paths": [
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/native_solver/log.txt",
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/post/data/residuals.csv"
+      ],
+      "timestamp": 1793488735.3665273,
+      "invalidation_reason": null
+    },
+    {
+      "node_id": "res_forces",
+      "category": "FIELD_RESULT",
+      "label": "Aerodynamic Forces & Surface 10-Point Sampling",
+      "content_hash": "9800dc76e758b1e75925026c83d3ad864c19573f35d7903e35c737a4dca8f303",
+      "status": "VALID",
+      "properties": {},
+      "file_paths": [
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/post/data/forces.csv",
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/post/data/foil_surface_sampled_10pts.csv"
+      ],
+      "timestamp": 1793488735.366548,
+      "invalidation_reason": null
+    },
+    {
+      "node_id": "rep_pdf",
+      "category": "REPORT_DELIVERABLE",
+      "label": "Research Paper & Report",
+      "content_hash": "11811f154cb63d55aa8e1f139871cb138c9e5dd6e873d710d41ea30622029008",
+      "status": "VALID",
+      "properties": {},
+      "file_paths": [
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/reports/research_paper.pdf",
+        "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+20deg/vel_15mps/run_01/reports/engineering_report.md"
+      ],
+      "timestamp": 1793488735.3665648,
+      "invalidation_reason": null
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "req_01",
+      "target_id": "geom_casc",
+      "relation": "SPECIFIES"
+    },
+    {
+      "source_id": "geom_casc",
+      "target_id": "mesh_quad",
+      "relation": "DISCRETIZES"
+    },
+    {
+      "source_id": "mesh_quad",
+      "target_id": "solv_simple",
+      "relation": "DISCRETIZES"
+    },
+    {
+      "source_id": "solv_simple",
+      "target_id": "res_forces",
+      "relation": "PRODUCES"
+    },
+    {
+      "source_id": "res_forces",
+      "target_id": "rep_pdf",
+      "relation": "SYNTHESIZES"
+    }
+  ]
+}
