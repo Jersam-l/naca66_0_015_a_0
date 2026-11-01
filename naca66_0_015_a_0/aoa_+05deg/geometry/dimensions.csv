@@ -1,0 +1,9 @@
+parameter,value,unit,description
+chord_m,0.1,m,Airfoil chord length
+pitch_m,0.05,m,Blade-to-blade pitch spacing
+blade_count,3,-,Number of cascade blades
+incidence_deg,5.0,deg,Physical blade rotation angle
+cascade_solidity,2.0,-,Solidity sigma = c / s
+geometric_blockage_ratio,0.18549471183135743,-,Blockage B = sum(h_blade) / H_domain
+domain_height_m,0.2670289718071143,m,Domain height H
+projected_solid_height_m,0.04953246217598434,m,Total frontal projected solid height
