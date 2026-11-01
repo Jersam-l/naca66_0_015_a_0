@@ -1,0 +1,146 @@
+========================================================
+ Jastricks Native CFD Solver v3.1 (Universal Physics & Numerical Engine)
+ Algorithms: SIMPLE, SIMPLEC, PISO, PIMPLE, Coupled, DensityBased
+ Turbulence: Spalart-Allmaras, Realizable k-epsilon, Menter SST k-omega
+ Multi-Criterion Stopping: Residuals, Flux Imbalance, Force Stabilization
+========================================================
+[native] Parsing configuration from: "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+00deg/vel_15mps/run_01/native_solver/resolved_config.json"
+Configuration Resolved:
+  U_inlet: 15 m/s, V_inlet: 0 m/s
+  Stagger: 0 deg, MaxIters: 600
+  alphaU: 0.7, alphaP: 0.3, alphaNuT: 0.8
+  T_wall: 293.15 K, T_inlet: 293.15 K, Thermal: true
+  Tolerances: U=0.0001, P=0.0001, Cont=1e-05, MassImb=0.0001
+  Mesh: /home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+00deg/mesh/mesh.txt
+Mesh::load: top/bottom periodic faces are not conforming; retaining explicit boundary treatment.
+Mesh loaded: 32877 cells, 66353 faces (65155 internal).
+  Patch 'blade': 552 faces
+  Patch 'bottom': 150 faces
+  Patch 'inlet': 212 faces
+  Patch 'outlet': 134 faces
+  Patch 'top': 150 faces
+[SolverEngine] Ma_inf < 0.3: using pressure-based SIMPLE for viscous cascade fields
+========================================
+ Jastricks Native CFD Solver v0.4 (Coupled Physics & High-Order)
+ Algorithm: SIMPLE / PISO Multi-Corrector
+ Convection: Second-Order Deferred Correction (blending=0.75)
+ Coupled Physics: Thermal Energy (Active), Vorticity & Wake Metrics
+ Cells: 32877
+ Faces: 66353 (65155 internal)
+ U_inlet: 15 m/s,  V_inlet: 0 m/s
+ T_inlet: 293.15 K,  T_wall: 293.15 K
+ nu: 1.5e-05 m^2/s,  rho: 1.225 kg/m^3
+ alphaU: 0.7  alphaP: 0.3  nCorr: 1
+========================================
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+     0   1.000e+00      1.860e-03      0.000e+00      2.603e-03     -0.0222      0.8819        17.97
+     1   9.762e-01      3.544e-03      1.832e-03      1.329e-03     0.0274      0.3485        18.20
+     2   6.585e-01      1.859e-03      9.486e-04      6.883e-04     0.0276      0.2627        18.31
+     3   5.601e-01      1.376e-03      5.177e-04      1.082e-03     -0.0242      0.1386        18.32
+     4   7.403e-01      1.011e-03      3.690e-04      8.252e-04     0.0366      0.1382        18.33
+     5   3.572e-01      8.833e-04      2.736e-04      4.296e-04     -0.0325      0.0533        18.25
+     6   2.147e-01      7.522e-04      2.903e-04      2.706e-04     0.0385      0.0459        18.19
+     7   8.460e-02      6.046e-04      1.777e-04      1.819e-04     -0.0081      0.0539        18.10
+     8   1.941e-01      5.763e-04      1.164e-04      2.842e-04     0.0216      0.0618        18.01
+     9   2.619e-01      4.863e-04      1.293e-04      3.961e-04     -0.0173      0.0754        17.87
+    10   3.814e-01      3.883e-04      1.465e-04      3.777e-04     0.0351      0.0662        17.76
+    20   1.651e-02      3.136e-04      7.113e-05      7.355e-05     -0.0046      0.0183        15.18
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+    30   1.051e-01      1.675e-04      5.194e-05      7.229e-05     -0.0220      0.0566        11.86
+    40   2.115e-02      1.486e-04      5.427e-05      3.712e-05     0.0099      0.0600        11.25
+    50   2.396e-02      1.663e-04      7.216e-05      5.454e-05     0.0174      0.0761        11.41
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+    60   1.193e-02      2.127e-04      1.219e-04      1.135e-04     0.0370      0.0822        11.24
+    70   1.256e-01      3.691e-04      2.303e-04      5.330e-04     0.0189      0.0756        11.52
+    80   1.708e-01      3.708e-04      2.252e-04      2.814e-04     -0.0285      0.0666        10.83
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+    90   7.251e-02      4.621e-04      2.216e-04      1.682e-04     0.0354      0.0748        10.66
+   100   5.961e-02      4.781e-04      2.383e-04      1.197e-04     0.0622      0.0517        10.68
+   110   4.605e-02      4.465e-04      2.207e-04      7.901e-05     0.0218      0.0569        10.54
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   120   1.489e-02      3.933e-04      1.948e-04      5.574e-05     0.0306      0.0635        10.53
+   130   2.207e-02      3.014e-04      1.541e-04      3.801e-05     0.0173      0.0561        10.43
+   140   1.929e-02      2.140e-04      1.098e-04      2.829e-05     0.0067      0.0573        10.43
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   150   4.367e-03      1.362e-04      7.435e-05      1.426e-05     0.0015      0.0598        10.42
+   160   5.793e-03      9.015e-05      4.116e-05      1.185e-05     -0.0075      0.0573        10.40
+   170   6.348e-03      5.891e-05      2.582e-05      8.254e-06     -0.0137      0.0579        10.41
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   180   8.066e-04      4.252e-05      1.677e-05      4.789e-06     -0.0209      0.0585        10.40
+   190   1.790e-03      2.684e-05      1.047e-05      4.193e-06     -0.0275      0.0579        10.40
+   200   1.442e-03      2.119e-05      7.724e-06      3.425e-06     -0.0326      0.0580        10.41
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   210   3.767e-04      1.749e-05      6.185e-06      2.142e-06     -0.0372      0.0582        10.41
+   220   5.382e-04      1.394e-05      4.840e-06      1.928e-06     -0.0411      0.0581        10.40
+   230   5.339e-04      1.075e-05      3.676e-06      1.661e-06     -0.0445      0.0581        10.40
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   240   1.825e-04      8.173e-06      2.709e-06      1.260e-06     -0.0472      0.0582        10.40
+   250   2.810e-04      6.184e-06      1.983e-06      1.155e-06     -0.0494      0.0581        10.40
+   260   1.690e-04      4.843e-06      1.497e-06      7.915e-07     -0.0512      0.0581        10.40
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   270   8.172e-05      3.506e-06      1.138e-06      6.574e-07     -0.0526      0.0581        10.40
+   280   1.152e-04      2.650e-06      9.516e-07      5.902e-07     -0.0538      0.0581        10.40
+   290   5.178e-05      2.106e-06      7.002e-07      4.160e-07     -0.0547      0.0581        10.40
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   300   5.372e-05      1.594e-06      5.589e-07      3.183e-07     -0.0554      0.0581        10.40
+   310   3.452e-05      1.261e-06      4.591e-07      2.603e-07     -0.0560      0.0581        10.40
+   320   2.723e-05      1.032e-06      3.637e-07      2.081e-07     -0.0565      0.0581        10.40
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   330   1.716e-05      8.415e-07      3.070e-07      1.722e-07     -0.0569      0.0581        10.40
+   340   1.545e-05      6.904e-07      2.522e-07      1.445e-07     -0.0572      0.0581        10.40
+   350   1.514e-05      5.640e-07      2.000e-07      1.065e-07     -0.0574      0.0581        10.40
+
+  Iter   Continuity     X-Velocity     Y-Velocity      Pressure          Cl           Cd         y+ (mean)
+ --------------------------------------------------------------------------------------------------------
+   360   8.950e-06      4.625e-07      1.693e-07      9.238e-08     -0.0576      0.0581        10.40
+*** CONVERGED at iteration 369 (Criteria satisfied for 10 consecutive iters, dCl_rel=0.00, dCd_rel=0.00) ***
+VTK output: output.vtk
+Residuals: residuals.csv
+Force history exported to: forces_history.csv
+Surface data exported to: surface_cp.csv
+Wake profiles exported to: wake_profiles.csv
+Thermal surface data exported to: thermal_surface.csv
+========================================
+ Aerodynamic Performance Summary (Per Blade & Total):
+  Blade 1: Cl = -0.3511, Cd = 0.0474, y+ (min=0.73, mean=10.40, P95=17.41, max=24.42 at x=0.00)
+  Blade 2: Cl = -0.0763, Cd = 0.0761, y+ (min=1.44, mean=10.67, P95=17.12, max=20.34 at x=0.00)
+  Blade 3: Cl = 0.2543, Cd = 0.0507, y+ (min=0.52, mean=10.14, P95=16.96, max=19.64 at x=0.00)
+  Cascade Total: Cl = -0.0577, Cd = 0.0581, Fx_press = 2.1799e+00 N, Fy_press = -2.3875e+00 N, Fx_visc = 2.2157e-01 N, Fy_visc = 1.8518e-03 N
+  Overall y+ = 10.40 (Max y+ = 24.42, Target = 1.0)
+========================================
+Residuals: ./residuals.csv
+Force history exported to: ./forces_history.csv
+
+========================================================
+ Solver Execution Concluded:
+  Convergence Status: CONVERGED
+  Termination Reason: CONVERGED_ALL_CRITERIA_SATISFIED
+  Iterations Completed: 370
+  Integrated Forces: Cl = -0.06, Cd = 0.06
+  Wall y+ Statistics: Mean = 10.40, Max = 24.42
+  Field Output: ./results.vtk
+========================================================
