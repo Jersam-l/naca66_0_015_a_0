@@ -1,0 +1,14 @@
+{
+  "case_id": "case_44_aoa+05_u20",
+  "study": "66_0__015_c100mm",
+  "airfoil": "NACA 66(0)-015",
+  "chord_m": 0.1,
+  "pitch_m": 0.05,
+  "meanline_a": 0.0,
+  "blade_count": 3,
+  "stagger_deg": 5.0,
+  "velocity_magnitude_m_s": 20.0,
+  "incidence_deg": 5.0,
+  "incidence_convention": "Physical airfoil geometric rotation (stagger_angle_deg = alpha) with axial oncoming flow (U = vel, V = 0)",
+  "solver": "jastricks_native_simple_cpp"
+}
