@@ -8,13 +8,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        1.3733332203803123e-09,
-        10169226.000227807
+        2.340618882158635e-09,
+        10170029.187606785
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        8.36291216065376e-05,
-        10154432.799906693
+        8.53258792389173e-05,
+        10155558.571923144
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -27,13 +27,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -6750.196488772024,
-        1736.068750832134
+        -6751.332156431134,
+        1736.522025049262
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        -6750.196488772024,
-        1736.068750832134
+        -6751.332156431134,
+        1736.522025049262
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -46,13 +46,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        1.2986753169640137e-07,
-        0.07833793599079036
+        7.46028031249744e-07,
+        0.07834914606544868
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        1.2986753169640137e-07,
-        0.07833793599079036
+        7.46028031249744e-07,
+        0.07834914606544868
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -65,13 +65,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        2.8818834200984424e-05,
-        0.02117335921511402
+        2.9467890172849615e-05,
+        0.02117382701566496
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        0.0001768180249630281,
-        0.021014171732324366
+        0.00017604791472187981,
+        0.02101463680546498
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -84,13 +84,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        1.7935928489957777e-05,
-        0.0006476050169972531
+        1.8615899142911893e-05,
+        0.0006472549885119674
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        2.008739581322394e-05,
-        0.000643618476505198
+        2.0866974230617538e-05,
+        0.0006437949474666672
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -103,13 +103,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -26.03802017355336,
-        15.654323389377765
+        -26.88044571407795,
+        14.813250025500121
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        -24.849482289212432,
-        14.932743581313847
+        -25.691582503737067,
+        14.09204878113741
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -122,13 +122,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -1.6228233331730566,
-        0.9751995808204961
+        -1.6778176328971144,
+        0.9202970632579532
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        -1.6228233331730566,
-        0.9751995808204961
+        -1.6778176328971144,
+        0.9202970632579532
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -141,13 +141,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        0.04406557058426773,
-        2351.31617240599
+        0.028215285691339277,
+        2351.373767504156
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        0.04406557058426773,
-        2351.31617240599
+        0.028215285691339277,
+        2351.373767504156
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -160,13 +160,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        293.1391022111139,
-        293.15832927679463
+        293.1388461826847,
+        293.16454456205895
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        293.1397283916897,
-        293.1580362280735
+        293.13899321304365,
+        293.1644245756435
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -179,13 +179,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -14.167367005662863,
-        18.67518352452941
+        -15.007992046583789,
+        17.835426383772575
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        -14.167367005662863,
-        18.67518352452941
+        -15.007992046583789,
+        17.835426383772575
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -198,13 +198,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -0.4210587128659968,
-        1.9252396984378406
+        -0.3662172670440734,
+        1.9801384820203938
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        -0.2240253340875054,
-        1.9251498746138895
+        -0.16915118988907932,
+        1.9800479280388426
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -217,13 +217,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        1.3027486660412855e-10,
-        1.324918148279729
+        4.0402529408014386e-10,
+        1.324085215613054
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        1.3027486660412855e-10,
-        1.324918148279729
+        4.0402529408014386e-10,
+        1.324085215613054
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -236,13 +236,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        0.0089630108674237,
-        42.714372361729616
+        0.010402966329234842,
+        42.72624239621626
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        0.0089630108674237,
-        42.714372361729616
+        0.010402966329234842,
+        42.72624239621626
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -255,13 +255,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -1.1354393036425412,
-        7.153867112179751
+        -1.135344310391789,
+        7.154008837358984
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        -1.1354393036425412,
-        7.153867112179751
+        -1.135344310391789,
+        7.154008837358984
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -274,13 +274,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -4.990082721339509,
-        2.2383868545119068
+        -4.990453150156949,
+        2.239365472743464
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        -4.990082721339509,
-        2.2383868545119068
+        -4.990453150156949,
+        2.239365472743464
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -293,13 +293,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        0.009891636221353282,
-        7.26737679425109
+        0.010114281521817712,
+        7.267532000281326
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        0.0606888894145747,
-        7.212738509311127
+        0.06042676565583634,
+        7.212892605556152
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -312,13 +312,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        4.318841104784705e-08,
-        572.9098176571918
+        1.7665432014979184e-08,
+        573.039801973763
       ],
       "reconstruction": "native_point_data",
       "rendered_range": [
-        4.318841104784705e-08,
-        572.9098176571918
+        1.7665432014979184e-08,
+        573.039801973763
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false
@@ -331,13 +331,13 @@
       "node_count": 34348,
       "range_expanded": false,
       "raw_range": [
-        -4775.4169261848665,
-        6377.844777110151
+        -4774.885398717855,
+        6378.096640097823
       ],
       "reconstruction": "cell_to_node_inverse_distance_at_cell_centres",
       "rendered_range": [
-        -4775.149917642282,
-        6373.202464111492
+        -4774.608711829107,
+        6373.55581042156
       ],
       "source": "native_solver_vtk",
       "synthetic_field": false

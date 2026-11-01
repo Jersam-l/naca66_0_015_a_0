@@ -6,7 +6,7 @@
 - **Inlet Velocity Vector:** $U_x = 5.0000$ m/s, $U_y = 0.0000$ m/s
 - **Integrated Aerodynamic Forces:** $C_l = -0.1393$, $C_d = 0.0747$, $L/D = -1.87$
 - **Physical Kinematics:** Blades physically rotated by stagger angle $\gamma = -5.0^\circ$ around center foil origin $(0,0)$
-- **Solver Exit Status:** `CONVERGED` | **Total Solution Runtime:** 64.4 s
+- **Solver Exit Status:** `CONVERGED` | **Total Solution Runtime:** 66.9 s
 
 ---
 
@@ -126,16 +126,16 @@ A common source of confusion in CFD post-processing is observing that $y^+_{\tex
 **Case-Specific Numerical Derivation for this Case (case_21_aoa-05_u05):**
 - Constant mesh first-cell spacing: $y_1 = 2.856000e-04$ m ($0.286$ mm), Fluid properties: $\rho = 1.225$ kg/m³, $\nu = 1.50e-05$ m²/s.
 - **Station 1 (Leading Edge Nose, $x/c \approx 0.00$):**  
-  $\tau_w = 0.2560$ Pa $\implies u_\tau = \sqrt{0.2560 / 1.225} = 0.4571$ m/s  
+  $\tau_w = 0.2559$ Pa $\implies u_\tau = \sqrt{0.2559 / 1.225} = 0.4571$ m/s  
   $$y^+_{\text{local}} = \frac{2.856000e-04 \times 0.4571}{1.50e-05} = 8.70$$
 - **Station 2 (Suction Crest Peak, $x/c \approx 0.111$):**  
   $\tau_w = 0.2621$ Pa $\implies u_\tau = \sqrt{0.2621 / 1.225} = 0.4625$ m/s  
   $$y^+_{\text{local}} = \frac{2.856000e-04 \times 0.4625}{1.50e-05} = 8.81$$
 - **Station 3 (Trailing Edge Deceleration, $x/c \approx 1.000$):**  
-  $\tau_w = 0.0321$ Pa $\implies u_\tau = \sqrt{0.0321 / 1.225} = 0.1620$ m/s  
-  $$y^+_{\text{local}} = \frac{2.856000e-04 \times 0.1620}{1.50e-05} = 3.08$$
+  $\tau_w = 0.0322$ Pa $\implies u_\tau = \sqrt{0.0322 / 1.225} = 0.1622$ m/s  
+  $$y^+_{\text{local}} = \frac{2.856000e-04 \times 0.1622}{1.50e-05} = 3.09$$
 - **Full Blade Achieved Population Statistics:**  
-  Minimum $y^+ = 0.23$, Mean $y^+ = 6.93$, 95th Percentile $y^+ = 10.51$, Maximum $y^+ = 13.81$.
+  Minimum $y^+ = 0.17$, Mean $y^+ = 6.92$, 95th Percentile $y^+ = 10.51$, Maximum $y^+ = 13.81$.
 
 ### Question 15 · Mesh Quality Assessment
 **Discrete Geometric Metrics on Solver Grid:**
@@ -227,13 +227,13 @@ To verify the deterministic mathematical relationship between every column in Ta
 - **Step 1 · Normalized Chord (x/c):**
   $$\frac{x}{c} = \frac{0.0005}{0.1000} = 0.000$$
 - **Step 2 · Pressure Coefficient (Cp):**
-  $$C_p = \frac{p_w - p_\infty}{q_\infty} = \frac{9.38 - 0.0}{15.31} = 0.6128 \quad \text{(Matches Table: } 0.6128\text{)}$$
+  $$C_p = \frac{p_w - p_\infty}{q_\infty} = \frac{8.54 - 0.0}{15.31} = 0.5580 \quad \text{(Matches Table: } 0.5580\text{)}$$
 - **Step 3 · Friction Velocity (u_tau):**
-  $$u_\tau = \sqrt{\frac{|\tau_w|}{\rho}} = \sqrt{\frac{0.2560}{1.225}} = 0.4571 \text{ m/s}$$
+  $$u_\tau = \sqrt{\frac{|\tau_w|}{\rho}} = \sqrt{\frac{0.2559}{1.225}} = 0.4571 \text{ m/s}$$
 - **Step 4 · Realized Wall Friction Coordinate (y+_local):**
   $$y^+_{\text{local}} = \frac{y_1 u_\tau}{\nu} = \frac{2.856000e-04 \times 0.4571}{1.50e-05} = 8.70 \quad \text{(Matches Table: } 8.70\text{)}$$
 - **Step 5 · Boundary Layer Edge Velocity (U_e):**
-  $$U_e = U_\infty \sqrt{1 - C_p} = 5.00 \times \sqrt{1 - (0.6128)} = 3.11 \text{ m/s} \quad \text{(Matches Table: } 3.11\text{)}$$
+  $$U_e = U_\infty \sqrt{1 - C_p} = 5.00 \times \sqrt{1 - (0.5580)} = 3.32 \text{ m/s} \quad \text{(Matches Table: } 3.32\text{)}$$
 
 
 
@@ -249,24 +249,24 @@ To verify the deterministic mathematical relationship between every column in Ta
 
 | Point | Surface | x (m) | y (m) | x/c | p_wall (Pa) | Cp | tau_w (Pa) | y1_mesh (mm) [FIXED] | y+_target [FIXED] | y+_local (u_tau) | U_e (m/s) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Upper | 0.0005 | -0.0048 | 0.000 | 9.4 | 0.6128 | 0.2560 | 0.286 | 1.00 | 8.70 | 3.11 |
-| 2 | Upper | 0.0119 | -0.0080 | 0.111 | -6.6 | -0.4313 | 0.2621 | 0.289 | 1.00 | 8.90 | 5.98 |
-| 3 | Upper | 0.0231 | -0.0087 | 0.222 | -7.3 | -0.4777 | 0.2389 | 0.289 | 1.00 | 8.52 | 6.08 |
-| 4 | Upper | 0.0342 | -0.0086 | 0.333 | -8.4 | -0.5474 | 0.2317 | 0.285 | 1.00 | 8.27 | 6.22 |
-| 5 | Upper | 0.0453 | -0.0079 | 0.444 | -8.8 | -0.5727 | 0.2127 | 0.280 | 1.00 | 7.77 | 6.27 |
-| 6 | Upper | 0.0564 | -0.0067 | 0.556 | -7.7 | -0.5035 | 0.1549 | 0.278 | 1.00 | 6.58 | 6.13 |
-| 7 | Upper | 0.0673 | -0.0046 | 0.667 | -6.3 | -0.4092 | 0.0020 | 0.252 | 1.00 | 0.44 | 5.93 |
-| 8 | Upper | 0.0782 | -0.0016 | 0.778 | -5.5 | -0.3564 | 0.0609 | 0.274 | 1.00 | 4.07 | 5.82 |
-| 9 | Upper | 0.0891 | 0.0017 | 0.889 | -4.6 | -0.3024 | 0.0669 | 0.295 | 1.00 | 4.59 | 5.71 |
-| 10 | Upper | 0.0993 | 0.0043 | 1.000 | -3.5 | -0.2276 | 0.0321 | 0.367 | 1.00 | 3.97 | 5.54 |
-| 1 | Lower | 0.0004 | -0.0039 | 0.000 | 15.7 | 1.0223 | 0.0115 | 0.351 | 1.00 | 2.27 | 0.00 |
-| 2 | Lower | 0.0110 | 0.0012 | 0.111 | -0.6 | -0.0393 | 0.3182 | 0.289 | 1.00 | 9.82 | 5.10 |
-| 3 | Lower | 0.0220 | 0.0039 | 0.222 | -5.2 | -0.3375 | 0.3285 | 0.300 | 1.00 | 10.35 | 5.78 |
-| 4 | Lower | 0.0330 | 0.0057 | 0.333 | -8.1 | -0.5264 | 0.3173 | 0.310 | 1.00 | 10.53 | 6.18 |
-| 5 | Lower | 0.0440 | 0.0070 | 0.444 | -10.0 | -0.6538 | 0.2927 | 0.301 | 1.00 | 9.83 | 6.43 |
-| 6 | Lower | 0.0551 | 0.0077 | 0.556 | -10.8 | -0.7045 | 0.2452 | 0.296 | 1.00 | 8.83 | 6.53 |
-| 7 | Lower | 0.0663 | 0.0075 | 0.667 | -9.2 | -0.5998 | 0.1371 | 0.294 | 1.00 | 6.55 | 6.32 |
-| 8 | Lower | 0.0775 | 0.0064 | 0.778 | -8.0 | -0.5236 | 0.0031 | 0.291 | 1.00 | 0.83 | 6.17 |
-| 9 | Lower | 0.0888 | 0.0051 | 0.889 | -6.5 | -0.4221 | 0.0315 | 0.296 | 1.00 | 3.17 | 5.96 |
-| 10 | Lower | 0.0993 | 0.0043 | 1.000 | -3.4 | -0.2251 | 0.0233 | 0.333 | 1.00 | 3.05 | 5.53 |
+| 1 | Upper | 0.0005 | -0.0048 | 0.000 | 8.5 | 0.5580 | 0.2559 | 0.286 | 1.00 | 8.70 | 3.32 |
+| 2 | Upper | 0.0119 | -0.0080 | 0.111 | -7.4 | -0.4861 | 0.2621 | 0.289 | 1.00 | 8.90 | 6.09 |
+| 3 | Upper | 0.0231 | -0.0087 | 0.222 | -8.2 | -0.5325 | 0.2389 | 0.289 | 1.00 | 8.52 | 6.19 |
+| 4 | Upper | 0.0342 | -0.0086 | 0.333 | -9.2 | -0.6023 | 0.2317 | 0.285 | 1.00 | 8.27 | 6.33 |
+| 5 | Upper | 0.0453 | -0.0079 | 0.444 | -9.6 | -0.6277 | 0.2127 | 0.280 | 1.00 | 7.77 | 6.38 |
+| 6 | Upper | 0.0564 | -0.0067 | 0.556 | -8.6 | -0.5586 | 0.1550 | 0.278 | 1.00 | 6.58 | 6.24 |
+| 7 | Upper | 0.0673 | -0.0046 | 0.667 | -7.1 | -0.4642 | 0.0019 | 0.252 | 1.00 | 0.38 | 6.05 |
+| 8 | Upper | 0.0782 | -0.0016 | 0.778 | -6.3 | -0.4114 | 0.0609 | 0.274 | 1.00 | 4.07 | 5.94 |
+| 9 | Upper | 0.0891 | 0.0017 | 0.889 | -5.5 | -0.3573 | 0.0670 | 0.295 | 1.00 | 4.59 | 5.83 |
+| 10 | Upper | 0.0993 | 0.0043 | 1.000 | -4.3 | -0.2823 | 0.0322 | 0.367 | 1.00 | 3.97 | 5.66 |
+| 1 | Lower | 0.0004 | -0.0039 | 0.000 | 14.8 | 0.9674 | 0.0115 | 0.351 | 1.00 | 2.27 | 0.90 |
+| 2 | Lower | 0.0110 | 0.0012 | 0.111 | -1.4 | -0.0941 | 0.3182 | 0.289 | 1.00 | 9.82 | 5.23 |
+| 3 | Lower | 0.0220 | 0.0039 | 0.222 | -6.0 | -0.3922 | 0.3284 | 0.300 | 1.00 | 10.35 | 5.90 |
+| 4 | Lower | 0.0330 | 0.0057 | 0.333 | -8.9 | -0.5810 | 0.3172 | 0.310 | 1.00 | 10.53 | 6.29 |
+| 5 | Lower | 0.0440 | 0.0070 | 0.444 | -10.8 | -0.7083 | 0.2927 | 0.301 | 1.00 | 9.82 | 6.54 |
+| 6 | Lower | 0.0551 | 0.0077 | 0.556 | -11.6 | -0.7588 | 0.2451 | 0.296 | 1.00 | 8.83 | 6.63 |
+| 7 | Lower | 0.0663 | 0.0075 | 0.667 | -10.0 | -0.6540 | 0.1369 | 0.294 | 1.00 | 6.55 | 6.43 |
+| 8 | Lower | 0.0775 | 0.0064 | 0.778 | -8.9 | -0.5782 | 0.0029 | 0.291 | 1.00 | 0.75 | 6.28 |
+| 9 | Lower | 0.0888 | 0.0051 | 0.889 | -7.3 | -0.4768 | 0.0318 | 0.296 | 1.00 | 3.18 | 6.08 |
+| 10 | Lower | 0.0993 | 0.0043 | 1.000 | -4.3 | -0.2800 | 0.0229 | 0.333 | 1.00 | 3.03 | 5.66 |
 

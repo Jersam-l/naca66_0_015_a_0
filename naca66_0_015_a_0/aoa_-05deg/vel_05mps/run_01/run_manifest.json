@@ -11,9 +11,9 @@
     "case_id": "case_21_aoa-05_u05",
     "velocity_m_s": 5.0,
     "incidence_deg": -5.0,
-    "Cl": -0.139334,
-    "Cd": 0.0746881,
-    "runtime_s": 64.40429329872131,
+    "Cl": -0.139333,
+    "Cd": 0.0746699,
+    "runtime_s": 66.85256719589233,
     "status": "CONVERGED"
   }
 }
