@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "quality_metrics": {
+    "status": "PASS",
+    "failures": [],
+    "inverted_cells": 0,
+    "min_scaled_jacobian": 0.6245669299945191,
+    "min_angle": 43.8379910398773,
+    "max_angle": 141.34959167803845,
+    "skew_mean": 0.06005175097347243,
+    "skew_p95": 0.27471097445961123,
+    "skew_max": 0.5705510186448717,
+    "ar_median": 1.0368497306799085,
+    "ar_p95": 1.402949022215217,
+    "ar_max": 2.8451963954179287,
+    "ar_bulk_max": 2.8451963954179287,
+    "gate2_metrics": {
+      "outside_le_te": {
+        "sample_count": 307,
+        "ar": {
+          "min": 1.0114034096624278,
+          "mean": 1.2400004942055218,
+          "p95": 1.9432791476684985,
+          "max": 2.346254208789367,
+          "limit": 8.0,
+          "pass": true
+        },
+        "skewness": {
+          "min": 0.00783278204471382,
+          "mean": 0.1284217864497737,
+          "p95": 0.41919745319407786,
+          "max": 0.49994925885383407,
+          "limit": 0.7,
+          "pass": true
+        },
+        "min_angle_deg": {
+          "min": 45.004566703154936,
+          "mean": 80.12567797917063,
+          "p95": 88.68920791320672,
+          "max": 89.44106163930337,
+          "limit": 20.0,
+          "pass": true
+        }
+      },
+      "inside_inflation": {
+        "growth_ratio": {
+          "min": 1.15,
+          "mean": 1.15,
+          "p95": 1.15,
+          "max": 1.15,
+          "limit": 1.2,
+          "pass": true
+        },
+        "last_layer_vs_neighbor": {
+          "value": 1.0,
+          "limit": 1.5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "nodes": 38828,
+  "cells": 38203,
+  "faces": 77033,
+  "quads": 38203,
+  "triangles": 0,
+  "first_cell_height_m": 1.71e-06,
+  "last_layer_height_m": 0.0006966317202042922,
+  "layer_count": 44,
+  "growth_ratio": 1.15
+}
