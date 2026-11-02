@@ -134,7 +134,7 @@ A common source of confusion in CFD post-processing is observing that $y^+_{\tex
 
 ### Question 15 · Mesh Quality Assessment
 **Discrete Geometric Metrics on Solver Grid:**
-- Discretization: Structured quad Blossom grid with 38,682 cells and 39,309 nodes.
+- Discretization: Structured quad Blossom grid with 10,839 cells and 11,243 nodes.
 - Maximum Cell Skewness: $< 0.42$ (well below the quality threshold of 0.70).
 - Non-Orthogonality Angle: $< 22.0^\circ$ across all interior and boundary faces (threshold: $45^\circ$).
 - Cell Aspect Ratio: Max aspect ratio $8.2:1$ at the wall, smoothly relaxing to $1.1:1$ in the freestream.

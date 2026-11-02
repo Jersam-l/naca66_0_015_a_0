@@ -3,7 +3,7 @@
 
 ### Single-Command Child Execution:
 ```bash
-python3 -m jastricks simulate --case cascade-matrix --output /home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0 --inputs '{"single_case": true, "velocity": 45.0, "incidence": 40.0, "case_idx": 119}'
+python3 -m jastricks simulate --case cascade-matrix --output /home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0 --inputs '{"single_case": true, "velocity": 45.0, "incidence": 40.0, "case_idx": 119}'
 ```
 
 ### Granular Execution Steps:

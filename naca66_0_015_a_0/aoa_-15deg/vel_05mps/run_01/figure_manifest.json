@@ -6,7 +6,7 @@
       "figure_id": "Figure 1",
       "caption": "Figure 1: Cascade Multiblade Geometry & Inflow Vector (Blade AoA = -15.0\u00b0, Mid-Blade Pivot).",
       "file_name": "geometry_dimensions.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/aoa_-15deg/geometry/images/geometry_dimensions.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_-15deg/geometry/images/geometry_dimensions.png",
       "quantity": "Geometry Coordinates",
       "units": "m",
       "explanation_elements": {
@@ -22,7 +22,7 @@
       "figure_id": "Figure 2",
       "caption": "Figure 2: Computational Domain Mesh Wireframe (35,804 Blossom Quad Cells).",
       "file_name": "mesh_wireframe.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/aoa_-15deg/mesh/images/mesh_wireframe.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_-15deg/mesh/images/mesh_wireframe.png",
       "quantity": "Grid Topology",
       "units": "dimensionless",
       "explanation_elements": {
@@ -38,7 +38,7 @@
       "figure_id": "Figure 3",
       "caption": "Figure 3: Near-Blade Mesh Wireframe Zoom Detail (Boundary-Layer Orthogonal Grid).",
       "file_name": "mesh_wireframe_zoom.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2_MISSING/naca66_0_015_a_0/aoa_-15deg/mesh/images/mesh_wireframe_zoom.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_-15deg/mesh/images/mesh_wireframe_zoom.png",
       "quantity": "Grid Topology",
       "units": "dimensionless",
       "explanation_elements": {

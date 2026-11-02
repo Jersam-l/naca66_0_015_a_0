@@ -4,14 +4,14 @@
  Turbulence: Spalart-Allmaras, Realizable k-epsilon, Menter SST k-omega
  Multi-Criterion Stopping: Residuals, Flux Imbalance, Force Stabilization
 ========================================================
-[native] Parsing configuration from: "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+40deg/vel_10mps/run_01/native_solver/resolved_config.json"
+[native] Parsing configuration from: "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_+40deg/vel_10mps/run_01/native_solver/resolved_config.json"
 Configuration Resolved:
   U_inlet: 10 m/s, V_inlet: 0 m/s
   Stagger: 40 deg, MaxIters: 600
   alphaU: 0.7, alphaP: 0.3, alphaNuT: 0.8
   T_wall: 293.15 K, T_inlet: 293.15 K, Thermal: true
   Tolerances: U=0.0001, P=0.0001, Cont=1e-05, MassImb=0.0001
-  Mesh: /home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+40deg/mesh/mesh.txt
+  Mesh: /home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_+40deg/mesh/mesh.txt
 Mesh::load: top/bottom periodic faces are not conforming; retaining explicit boundary treatment.
 Mesh loaded: 38682 cells, 77993 faces (76731 internal).
   Patch 'blade': 552 faces

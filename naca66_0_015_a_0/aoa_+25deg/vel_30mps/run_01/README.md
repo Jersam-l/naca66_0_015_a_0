@@ -7,7 +7,7 @@
 - **Mean Wall $y^+$:** 14.94
 - **Single-Case Execution Command:**
   ```bash
-  python3 -m jastricks simulate --case cascade-matrix --output /home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0 --inputs '{"single_case": true, "velocity": 30.0, "incidence": 25.0, "case_idx": 86}'
+  python3 -m jastricks simulate --case cascade-matrix --output /home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0 --inputs '{"single_case": true, "velocity": 30.0, "incidence": 25.0, "case_idx": 86}'
   ```
 - **Publication Manuscript:** [research_paper.pdf](reports/research_paper.pdf)
 

@@ -6,7 +6,7 @@
       "figure_id": "Figure 1",
       "caption": "Figure 1: Cascade Multiblade Geometry & Inflow Vector (Blade AoA = +0.0\u00b0, Mid-Blade Pivot).",
       "file_name": "geometry_dimensions.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+00deg/geometry/images/geometry_dimensions.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_+00deg/geometry/images/geometry_dimensions.png",
       "quantity": "Geometry Coordinates",
       "units": "m",
       "explanation_elements": {
@@ -22,7 +22,7 @@
       "figure_id": "Figure 2",
       "caption": "Figure 2: Computational Domain Mesh Wireframe (32,877 Blossom Quad Cells).",
       "file_name": "mesh_wireframe.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+00deg/mesh/images/mesh_wireframe.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_+00deg/mesh/images/mesh_wireframe.png",
       "quantity": "Grid Topology",
       "units": "dimensionless",
       "explanation_elements": {
@@ -38,7 +38,7 @@
       "figure_id": "Figure 3",
       "caption": "Figure 3: Near-Blade Mesh Wireframe Zoom Detail (Boundary-Layer Orthogonal Grid).",
       "file_name": "mesh_wireframe_zoom.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/aoa_+00deg/mesh/images/mesh_wireframe_zoom.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/aoa_+00deg/mesh/images/mesh_wireframe_zoom.png",
       "quantity": "Grid Topology",
       "units": "dimensionless",
       "explanation_elements": {
@@ -854,7 +854,7 @@
       "figure_id": "Figure 54",
       "caption": "Figure 17: Authentic CFD Reynolds number scaling on cascade lift and drag coefficients.",
       "file_name": "cl_cd_vs_reynolds.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cl_cd_vs_reynolds.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cl_cd_vs_reynolds.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -870,7 +870,7 @@
       "figure_id": "Figure 55",
       "caption": "Figure 76: Authentic CFD cascade diffusion factor and de Haller deceleration metrics across velocities.",
       "file_name": "diffusion_factor_de_haller.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/diffusion_factor_de_haller.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/diffusion_factor_de_haller.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -886,7 +886,7 @@
       "figure_id": "Figure 56",
       "caption": "Figure 21: Authentic CFD blade surface Cp distribution compared across freestream velocities.",
       "file_name": "cp_distribution_comparison_all_velocities.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cp_distribution_comparison_all_velocities.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cp_distribution_comparison_all_velocities.png",
       "quantity": "Pressure Coefficient Cp",
       "units": "dimensionless",
       "explanation_elements": {
@@ -902,7 +902,7 @@
       "figure_id": "Figure 57",
       "caption": "Figure 11: Authentic CFD cascade lift curve across completed angles of attack.",
       "file_name": "cl_vs_alpha.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cl_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cl_vs_alpha.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -918,7 +918,7 @@
       "figure_id": "Figure 58",
       "caption": "Figure 12: Authentic CFD drag coefficient variation across completed angles of attack.",
       "file_name": "cd_vs_alpha.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cd_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cd_vs_alpha.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -934,7 +934,7 @@
       "figure_id": "Figure 59",
       "caption": "Figure 13: Authentic CFD pitching moment across completed angles of attack.",
       "file_name": "cm_vs_alpha.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cm_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cm_vs_alpha.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -950,7 +950,7 @@
       "figure_id": "Figure 60",
       "caption": "Figure 14: Authentic CFD cascade drag polar from completed simulations.",
       "file_name": "drag_polar.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/drag_polar.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/drag_polar.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -966,7 +966,7 @@
       "figure_id": "Figure 61",
       "caption": "Figure 15: Authentic CFD aerodynamic efficiency L/D across completed angles of attack.",
       "file_name": "aerodynamic_efficiency_ld.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/aerodynamic_efficiency_ld.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/aerodynamic_efficiency_ld.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -982,7 +982,7 @@
       "figure_id": "Figure 62",
       "caption": "Figure 16: Authentic CFD center of pressure chordwise migration across angles of attack.",
       "file_name": "center_of_pressure_location.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/center_of_pressure_location.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/center_of_pressure_location.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -998,7 +998,7 @@
       "figure_id": "Figure 63",
       "caption": "Figure 21: Authentic CFD blade surface Cp evolution across simulated angles of attack.",
       "file_name": "cp_distribution_comparison_all_alphas.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cp_distribution_comparison_all_alphas.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cp_distribution_comparison_all_alphas.png",
       "quantity": "Pressure Coefficient Cp",
       "units": "dimensionless",
       "explanation_elements": {
@@ -1014,7 +1014,7 @@
       "figure_id": "Figure 64",
       "caption": "Figure 24: Authentic CFD drag component decomposition across simulated angles of attack.",
       "file_name": "drag_components_vs_alpha.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/drag_components_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/drag_components_vs_alpha.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -1030,7 +1030,7 @@
       "figure_id": "Figure 65",
       "caption": "Figure 45: Authentic CFD boundary layer separation migration across angles of attack.",
       "file_name": "separation_reattachment_vs_alpha.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/separation_reattachment_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/separation_reattachment_vs_alpha.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -1046,7 +1046,7 @@
       "figure_id": "Figure 66",
       "caption": "Figure 50: Authentic boundary layer transition location across angles of attack.",
       "file_name": "transition_location_vs_alpha.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/transition_location_vs_alpha.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/transition_location_vs_alpha.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -1062,7 +1062,7 @@
       "figure_id": "Figure 67",
       "caption": "Figure 73: Authentic CFD cascade loss bucket across completed angles of attack.",
       "file_name": "cascade_loss_bucket.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cascade_loss_bucket.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cascade_loss_bucket.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -1078,7 +1078,7 @@
       "figure_id": "Figure 68",
       "caption": "Figure 72: Authentic CFD mixed-out and mass-averaged loss coefficients vs incidence.",
       "file_name": "mixed_out_loss_vs_incidence.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/mixed_out_loss_vs_incidence.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/mixed_out_loss_vs_incidence.png",
       "quantity": "Field Quantity",
       "units": "SI",
       "explanation_elements": {
@@ -1094,7 +1094,7 @@
       "figure_id": "Figure 69",
       "caption": "Figure 20: Blade surface pressure distributions across simulated angles of attack.",
       "file_name": "cp_contour_multiple_alphas.png",
-      "relative_path": "/home/jerlin/Documents/projects/output/repo_2/naca66_0_015_a_0/post/plots/cp_contour_multiple_alphas.png",
+      "relative_path": "/home/jerlin/Documents/projects/Jastrix_ai_studio/output/repo_2/naca66_0_015_a_0/post/plots/cp_contour_multiple_alphas.png",
       "quantity": "Pressure Coefficient Cp",
       "units": "dimensionless",
       "explanation_elements": {
